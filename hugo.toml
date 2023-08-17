@@ -1,0 +1,126 @@
+baseURL = "https://www.bdbriggs.org/"
+languageCode = "en-us"
+theme = "aafu"
+
+[build]
+writeStats = true
+
+[params]
+title = "bdbriggs.org"
+author = "Brady Briggs"
+description = "Brady Briggs' Personal Bloc"
+#copyright = "short copyright message"
+
+[params.theme]
+# Available themes are 'light', 'dark', 'ocean', and 'pinkish'
+mainTheme = "dark"
+# setting false below will hide 'aafu by darshan' displayed under the profile pic
+showAttribute = true
+singlePage = true
+
+[params.favicons]
+use = true
+metas = '''
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+        <link rel="shortcut icon" href="favicon.ico">
+        '''
+
+# Profile section
+[params.profile]
+name = "Brady Briggs"
+tagline = "Software Developer"
+location = "Hillsboro, OR"
+photo = "../../images/samsquanch.jpg"
+
+# Section for links to social websites
+[params.social]
+title = "Links"
+
+[[params.social.list]]
+icon = "fab fa-linkedin-in"
+url = "https://www.linkedin.com/in/brady-briggs/"
+title = "LinkedIn"
+[[params.social.list]]
+icon = "fab fa-github"
+url = "https://github.com/ydarb"
+title = "GitHub"
+
+#Specify what is showin in the Accordion
+[[params.showInAccordion]]
+item = "aboutme"
+expand = false   # true for the section that is initially expanded
+[[params.showInAccordion]]
+item = "experience"
+[[params.showInAccordion]]
+item = "education"
+[[params.showInAccordion]]
+item = "skill"
+
+[params.aboutme]
+title = "About Me"
+icon = "fas fa-user"
+description = "I build things, solve problems, and fix stuff."
+
+# Experience section
+[params.experience]
+title = "Experiences"
+icon = "fas fa-briefcase"
+
+[[params.experience.list]]
+position = "Systems Development Engineer II"
+dates = "October 2022 - *Present*"
+company = "Amazon Web Services"
+details = "EC2 Edge"
+[[params.experience.list]]
+position = "Lead Software Engineer"
+dates = "July 2022 - September 2022"
+company = "Nike"
+details = "Enterprise Platforms"
+[[params.experience.list]]
+position = "Senior Software Engineer"
+dates = "April 2019 - July 2022"
+company = "Nike"
+details = "Enterprise Platforms"
+[[params.experience.list]]
+position = "Senior DevOps Engineer"
+dates = "June 2017 - April 2019"
+company = "Nike"
+details = "Enterprise Platforms"
+[[params.experience.list]]
+position = "DevOps Engineer - Contractor (Nike)"
+dates = "July 2016 - June 2017"
+company = "Mainz Brady Group"
+details = "Enterprise Platforms"
+
+# Education section
+[params.education]
+title = "Education"
+icon = "fas fa-graduation-cap"
+
+[[params.education.list]]
+degree = "B.S. in Business Information Systems"
+college = "Oregon State University"
+dates = "2012"
+
+# Skill section
+[params.skill]
+title = "Skills"
+panelId = "skill-panel"
+icon = "fas fa-cogs"
+
+[[params.skill.list]]
+skill = "Problem solving and Troubleshooting"
+skillrating = 95
+[[params.skill.list]]
+skill = "Go, Bash, Kubernetes"
+skillrating = 75
+[[params.skill.list]]
+skill = "Testable Software Design, Python, Docker"
+skillrating = 70
+[[params.skill.list]]
+skill = "Systems Design, Data Structures and Algorithms"
+skillrating = 65
